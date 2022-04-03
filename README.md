@@ -18,13 +18,13 @@ Since we have a lot of data but we used just few of them, we try by increasing t
 After training we test the strategy and we can see that the issue of detecting buy signals only still persists.
 In this case the algorithm is making money since we took 3 different months for the testing, but only because we are in a bullish local trend.
 
-![Cumulative Returns Tuned](./Resources/bokeh_plot (1).png)
+![Cumulative Returns Tuned](./Resources/bokeh_plot1.png)
 
 ### Different algorithm
 
 We keep the same parameters: rolling window (period 4), rolling window (period 30), training size 12 months, testing size 3 months.
 The new classifier we'll be using is the Logistic Regression, from the sklearn.linear module. In this case we have a model that like before predicts just buy signals and hence we end up with the same testing performance as before.
 
-![Cumulative Returns Tuned](./Resources/bokeh_plot (2).png)
+![Cumulative Returns Tuned](./Resources/bokeh_plot2.png)
 
 To conclude we can say that due to the complexity of the data at hand, it is required to use a more complex classifier able to detect hidden patterns in the data at hand.
